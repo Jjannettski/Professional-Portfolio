@@ -1,0 +1,326 @@
+
+/*UNIVERSAL CSS*/
+
+body, html{
+  /*height: 100%;*/
+	/*font-family: 'Pangolin', cursive;*/
+	/*background-color:#DCD0C0;*/
+/*font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Shadows Into Light', cursive;*/
+/*font-family: 'Raleway', sans-serif;*/
+}
+.ui.vertical.stripe.segment{
+  background: #C0B283;
+}
+.ui.styled.accordion, .ui.styled.accordion .accordion{
+  background: transparent;
+}
+.ui.segment{
+  background: transparent;
+}
+/*HEADER CSS*/
+
+.ui.inverted.segment, .ui.primary.inverted.segment{
+background-image: url("images/giphy/ladyriseanimate.gif");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ui.text.container{
+  font-size: 1.4rem;
+  margin-bottom: 10%;
+  margin-top:5%;
+}
+.ui.secondary.inverted.menu .link.item, .ui.secondary.inverted.menu a.item{
+  color:#C0B283 !important;
+}
+.ui.secondary.inverted.pointing.menu .active.item{
+  color:#C0B283;
+}
+.ui.secondary.inverted.pointing.menu .active.item{
+  border-color: #C0B283;
+}
+.ui.secondary.inverted.menu .active.item{
+  color:#C0B283 !important;
+}
+.ui.menu:not(.vertical) .item > .button{
+  color:#C0B283;
+}
+.ui.inverted.button{
+  box-shadow: 0px 0px 0px 2px #C0B283 inset !important;
+}
+.ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, .ui.secondary.inverted.menu a.item:hover{
+  color:#ffffff !important;
+}
+
+/*Sidebar Menu CSS*/
+.ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
+  color:#C0B283;
+}
+.ui.inverted.menu .active.item{
+  color:#C0B283 !important;
+}
+a.item:hover{
+  background: rgba(255, 255, 255, 0.15);
+}
+/*Floating Menu CSS*/
+.ui.menu .active.item{
+  color:#C0B283;
+}
+.ui.menu .item{
+  color:#C0B283;
+}
+.ui.large.menu{
+  background-color:#1B1C1D;
+}
+.ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover{
+  color:#ffffff !important;
+}
+.ui.button{
+  background: transparent;
+}
+
+/*background: rgba(255, 255, 255, 0.15)*/
+
+/*About Me Section Css*/
+
+.six.wide.right.floated.column{
+  margin-top: 2%;
+}
+.profile-img{
+  height:300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Process CSS*/
+
+.derp{
+  width: 150px;
+  height: 150px;
+  margin-right:2%;
+}
+
+#close{
+  color:rgba(0, 0, 0, 0.87);
+}
+.item.process-img{
+  margin-bottom: 5%;
+}
+
+/*ACCORDION CSS*/
+
+.web-apps{
+	margin-bottom: 5px;
+}
+.app-links{
+  color:#1B1C1D;
+}
+.app-links:hover{
+  color:#F4F4F4;
+}
+
+/*Button CSS*/
+
+.ui.primary.buttons .button, .ui.primary.button{
+	margin-left: 20px;
+}
+#hire-me{
+	text-align: center;
+}
+#hire-me-button{
+	font-size: 1.0rem;
+}
+#story-button{
+  font-size: 1.0rem;
+  margin-top:8%;
+  margin-bottom: 8%;
+}
+.ui.huge.primary.button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: #C0B283;
+  color: #F4F4F4;
+}
+.ui.huge.primary.button:hover{
+  color: #1B1C1D;
+}
+
+/*THE PRODUCT CSS*/
+
+.product-icons{
+  height:100px;
+  width:100px;
+}
+.icon-img{
+  margin-bottom: 15%;
+}
+.icon-text{
+  text-align: left;
+}
+.icons-main{
+  line-height: 1.5em;
+  display: flex;
+}
+.two-icons{
+flex-direction: row;
+text-align: center;
+width:50%;
+}
+.ui.header{
+  text-align: center;
+}
+.ui.header.icon-text{
+  text-align: center;
+}
+.ui.header.icon-text{
+  font-size: 20px;
+}
+h5.ui.header{
+  font-size: 20px;
+}
+
+/*FOOTER CSS*/
+
+.ui.inverted.header{
+  text-shadow: 2px 2px #000000;
+}
+
+/*MEDIA QUERIES*/
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .ui.inverted.segment, .ui.primary.inverted.segment, .icons-main {
+        background-attachment: scroll;
+    }
+  .icon-img{
+    margin-bottom: 20%;
+}
+.ui.header.icon-text{
+  font-size: 1rem;
+}
+h5.ui.header{
+  font-size: 1rem;
+}
+}
+
+@media only screen and (min-device-width: 320px){
+  .icon-img{
+    margin-bottom: 20%;
+}
+#story-love{
+  margin-top: 35px;
+}
+}
+@media only screen and (min-device-width: 412px){
+  #story-love{
+  margin-top: 65px;
+}
+}
+@media only screen and (min-device-width: 414px){
+#story-love{
+  margin-top: 65px;
+}
+}
+@media only screen and (min-device-width: 768px){
+  #story-love{
+  margin-top: 100px;
+}
+}
+/*and (min-device-width: 480px)
+*//*SEMANTIC UI CSS*/
+
+.hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+/*      margin-top: 3em;*/
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+      text-shadow: 2px 2px #000000;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+      text-shadow: 2px 2px #000000;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+      background-color:#F4F4F4;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+      color:;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
