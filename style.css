@@ -58,6 +58,8 @@ background-image: url("images/giphy/ladyriseanimate.gif");
   color:#ffffff !important;
 }
 
+
+
 /*Sidebar Menu CSS*/
 .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
   color:#C0B283;
@@ -127,9 +129,9 @@ a.item:hover{
 
 /*Button CSS*/
 
-.ui.primary.buttons .button, .ui.primary.button{
+/*.ui.primary.buttons .button, .ui.primary.button{
 	margin-left: 20px;
-}
+}*/
 #hire-me{
 	text-align: center;
 }
