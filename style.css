@@ -212,9 +212,12 @@ h5.ui.header{
 }
 .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui){
   text-align: center;
+  display: block;
+  color:#D5D5D5;
 }
 .ui.stackable.divided:not(.vertically).grid > .column:not(.row), .ui.stackable.divided:not(.vertically).grid > .row > .column{
   text-align: center;
+  color:#D5D5D5;
 }
 
 /*MEDIA QUERIES*/
@@ -243,11 +246,6 @@ h5.ui.header{
   margin-top: 35px;
 }
 }
-/*@media only screen and (min-device-width: 412px){
-  #story-love{
-  margin-top: 65px;
-}
-}*/
 @media only screen and (min-device-width: 414px){
 #story-love{
   margin-top: 65px;
@@ -258,8 +256,7 @@ h5.ui.header{
   margin-top: 100px;
 }
 }
-/*and (min-device-width: 480px)
-*//*SEMANTIC UI CSS*/
+/*SEMANTIC UI CSS*/
 
 .hidden.menu {
       display: none;
