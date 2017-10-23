@@ -205,6 +205,12 @@ h5.ui.header{
   font-size: 20px;
 }
 
+/*FORM CSS*/
+
+#story-form{
+  max-width: 90%;
+}
+
 /*FOOTER CSS*/
 
 .ui.inverted.header{
@@ -219,6 +225,8 @@ h5.ui.header{
   text-align: center;
   color:#D5D5D5;
 }
+
+
 
 /*MEDIA QUERIES*/
 
@@ -255,6 +263,9 @@ h5.ui.header{
   #story-love{
   margin-top: 100px;
 }
+  #story-form{
+    max-width: 95%;
+  }
 }
 /*SEMANTIC UI CSS*/
 
