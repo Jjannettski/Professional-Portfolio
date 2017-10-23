@@ -226,6 +226,9 @@ h5.ui.header{
   #story-form{
     max-width: 95%;
   }
+  #hire-me-form{
+    max-width: 95%;
+  }
 }
 /*SEMANTIC UI CSS*/
 .hidden.menu {
