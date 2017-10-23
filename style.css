@@ -1,16 +1,4 @@
-
 /*UNIVERSAL CSS*/
-
-body, html{
-  /*height: 100%;*/
-	/*font-family: 'Pangolin', cursive;*/
-	/*background-color:#DCD0C0;*/
-/*font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Indie Flower', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Shadows Into Light', cursive;*/
-/*font-family: 'Raleway', sans-serif;*/
-}
 .ui.vertical.stripe.segment{
   background: #D5D5D5;
 }
@@ -21,7 +9,6 @@ font-family: 'Shadows Into Light', cursive;*/
   background: transparent;
 }
 /*HEADER CSS*/
-
 .ui.inverted.segment, .ui.primary.inverted.segment{
 background-image: url("images/railroad.jpg");
   height: 100vh;
@@ -31,7 +18,6 @@ background-image: url("images/railroad.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .ui.text.container{
   font-size: 1.4rem;
   margin-bottom: 10%;
@@ -61,14 +47,9 @@ background-image: url("images/railroad.jpg");
 .ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, .ui.secondary.inverted.menu a.item:hover{
   color:#D5D5D5 !important;
 }
-.ui.secondary.pointing.menu{
-
-}
 .ui.secondary.inverted.pointing.menu{
 border:none;
 }
-
-
 /*Sidebar Menu CSS*/
 .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
   color:#d5d5d5;
@@ -96,11 +77,7 @@ a.item:hover{
   background: transparent;
   color:#d5d5d5;
 }
-
-/*background: rgba(255, 255, 255, 0.15)*/
-
 /*About Me Section Css*/
-
 .six.wide.right.floated.column{
   margin-top: 2%;
 }
@@ -109,57 +86,50 @@ a.item:hover{
   margin-right: auto;
   margin-left: auto;
 }
-
 /*Process CSS*/
-
 .derp{
   width: 150px;
   height: 150px;
   margin-right:2%;
 }
-
 #close{
   color:rgba(0, 0, 0, 0.87);
 }
 .item.process-img{
   margin-bottom: 5%;
 }
-
 /*ACCORDION CSS*/
-
 .web-apps{
 	margin-bottom: 5px;
 }
 .app-links{
   color:#1B1C1D;
+  text-decoration: none;
 }
 .app-links:hover{
   color:#D5D5D5;
 }
-
 /*Button CSS*/
-
-/*.ui.primary.buttons .button, .ui.primary.button{
-	margin-left: 20px;
-}*/
 #hire-me{
 	text-align: center;
 }
 #hire-me-button{
 	font-size: 1.0rem;
+  color:#d5d5d5;
+  background-color:#062f4f;
 }
 #hire-me-button:hover{
-  background-color:#1B1C1D;
-  color:#C0B283; 
+  color: #1B1C1D;
 }
 #story-button{
   font-size: 1.0rem;
   margin-top:8%;
   margin-bottom: 8%;
+  color:#d5d5d5;
+  background-color:#062f4f;
 }
 #story-button:hover{
- background-color:#1B1C1D;
-  color:#C0B283;
+  color: #1B1C1D;
 }
 .ui.huge.primary.button{
   margin-top: 2%;
@@ -170,9 +140,7 @@ a.item:hover{
 .ui.huge.primary.button:hover{
   color: #1B1C1D;
 }
-
 /*THE PRODUCT CSS*/
-
 .product-icons{
   height:100px;
   width:100px;
@@ -204,20 +172,17 @@ width:50%;
 h5.ui.header{
   font-size: 20px;
 }
-
 /*FORM CSS*/
-
 #story-form{
   max-width: 90%;
 }
-
 /*FOOTER CSS*/
-
 .ui.inverted.header{
   text-shadow: 2px 2px #000000;
 }
 .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui){
   text-align: center;
+  text-decoration: none;
   display: block;
   color:#D5D5D5;
 }
@@ -225,11 +190,7 @@ h5.ui.header{
   text-align: center;
   color:#D5D5D5;
 }
-
-
-
 /*MEDIA QUERIES*/
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .ui.inverted.segment, .ui.primary.inverted.segment, .icons-main {
@@ -245,7 +206,6 @@ h5.ui.header{
   font-size: 1rem;
 }
 }
-
 @media only screen and (min-device-width: 320px){
   .icon-img{
     margin-bottom: 20%;
@@ -268,11 +228,9 @@ h5.ui.header{
   }
 }
 /*SEMANTIC UI CSS*/
-
 .hidden.menu {
       display: none;
     }
-
     .masthead.segment {
       min-height: 700px;
       padding: 1em 0em;
@@ -295,7 +253,6 @@ h5.ui.header{
       font-weight: normal;
       text-shadow: 2px 2px #000000;
     }
-
     .ui.vertical.stripe {
       padding: 8em 0em;
       background-color:#D5D5D5;
@@ -334,7 +291,6 @@ h5.ui.header{
     .secondary.pointing.menu .toc.item {
       display: none;
     }
-
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
