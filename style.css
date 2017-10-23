@@ -12,7 +12,7 @@ font-family: 'Shadows Into Light', cursive;*/
 /*font-family: 'Raleway', sans-serif;*/
 }
 .ui.vertical.stripe.segment{
-  background: #C0B283;
+  background: #D5D5D5;
 }
 .ui.styled.accordion, .ui.styled.accordion .accordion{
   background: transparent;
@@ -23,8 +23,9 @@ font-family: 'Shadows Into Light', cursive;*/
 /*HEADER CSS*/
 
 .ui.inverted.segment, .ui.primary.inverted.segment{
-background-image: url("images/giphy/ladyriseanimate.gif");
-  height: 100%;
+background-image: url("images/railroad.jpg");
+  height: 100vh;
+  /*filter: grayscale(85%);*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,54 +38,63 @@ background-image: url("images/giphy/ladyriseanimate.gif");
   margin-top:5%;
 }
 .ui.secondary.inverted.menu .link.item, .ui.secondary.inverted.menu a.item{
-  color:#C0B283 !important;
+  color:#062f4f !important;
 }
 .ui.secondary.inverted.pointing.menu .active.item{
-  color:#C0B283;
-}
-.ui.secondary.inverted.pointing.menu .active.item{
-  border-color: #C0B283;
+  color:#062f4f;
+  border-color: #062f4f;
 }
 .ui.secondary.inverted.menu .active.item{
-  color:#C0B283 !important;
+  color:#062f4f !important;
 }
-.ui.menu:not(.vertical) .item > .button{
-  color:#C0B283;
+.ui.secondary.inv.ui.secondary.inverted.pointing.menu .active.itemerted.pointing.menu .active.item.ui.menu:not(.vertical) .item > .button{
+  color:#062f4f;
 }
 .ui.inverted.button{
-  box-shadow: 0px 0px 0px 2px #C0B283 inset !important;
+  box-shadow: 0px 0px 0px 2px #062f4f inset !important;
+  background-color: #062f4f;
+}
+.ui.inverted.button:hover{
+  box-shadow: 0px 0px 0px 2px #062f4f inset !important;
+  background-color: #062f4f;
 }
 .ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, .ui.secondary.inverted.menu a.item:hover{
-  color:#ffffff !important;
+  color:#D5D5D5 !important;
 }
+.ui.secondary.pointing.menu{
 
+}
+.ui.secondary.inverted.pointing.menu{
+border:none;
+}
 
 
 /*Sidebar Menu CSS*/
 .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
-  color:#C0B283;
+  color:#d5d5d5;
 }
 .ui.inverted.menu .active.item{
-  color:#C0B283 !important;
+  color:#d5d5d5 !important;
 }
 a.item:hover{
   background: rgba(255, 255, 255, 0.15);
 }
 /*Floating Menu CSS*/
 .ui.menu .active.item{
-  color:#C0B283;
+  color:#d5d5d5;
 }
 .ui.menu .item{
-  color:#C0B283;
+  color:#D5D5D5;
 }
 .ui.large.menu{
-  background-color:#1B1C1D;
+  background-color:#062f4f;
 }
 .ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover{
-  color:#ffffff !important;
+  color:black !important;
 }
 .ui.button{
   background: transparent;
+  color:#d5d5d5;
 }
 
 /*background: rgba(255, 255, 255, 0.15)*/
@@ -124,7 +134,7 @@ a.item:hover{
   color:#1B1C1D;
 }
 .app-links:hover{
-  color:#F4F4F4;
+  color:#D5D5D5;
 }
 
 /*Button CSS*/
@@ -138,16 +148,24 @@ a.item:hover{
 #hire-me-button{
 	font-size: 1.0rem;
 }
+#hire-me-button:hover{
+  background-color:#1B1C1D;
+  color:#C0B283; 
+}
 #story-button{
   font-size: 1.0rem;
   margin-top:8%;
   margin-bottom: 8%;
 }
+#story-button:hover{
+ background-color:#1B1C1D;
+  color:#C0B283;
+}
 .ui.huge.primary.button{
   margin-top: 2%;
   margin-bottom: 2%;
-  background: #C0B283;
-  color: #F4F4F4;
+  background: #062f4f;
+  color: #D5D5D5;
 }
 .ui.huge.primary.button:hover{
   color: #1B1C1D;
@@ -192,6 +210,12 @@ h5.ui.header{
 .ui.inverted.header{
   text-shadow: 2px 2px #000000;
 }
+.ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui){
+  text-align: center;
+}
+.ui.stackable.divided:not(.vertically).grid > .column:not(.row), .ui.stackable.divided:not(.vertically).grid > .row > .column{
+  text-align: center;
+}
 
 /*MEDIA QUERIES*/
 
@@ -219,11 +243,11 @@ h5.ui.header{
   margin-top: 35px;
 }
 }
-@media only screen and (min-device-width: 412px){
+/*@media only screen and (min-device-width: 412px){
   #story-love{
   margin-top: 65px;
 }
-}
+}*/
 @media only screen and (min-device-width: 414px){
 #story-love{
   margin-top: 65px;
@@ -252,9 +276,9 @@ h5.ui.header{
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-/*      margin-top: 3em;*/
+      margin-top: 3em;
       margin-bottom: 0em;
-      font-size: 4em;
+      font-size: 3em;
       font-weight: normal;
       text-shadow: 2px 2px #000000;
     }
@@ -266,7 +290,7 @@ h5.ui.header{
 
     .ui.vertical.stripe {
       padding: 8em 0em;
-      background-color:#F4F4F4;
+      background-color:#D5D5D5;
     }
     .ui.vertical.stripe h3 {
       font-size: 2em;
