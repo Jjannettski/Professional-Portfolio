@@ -1,18 +1,17 @@
 /*UNIVERSAL CSS*/
+/*body,.ui.vertical.inverted.sidebar.menu.left.uncover.visible,.ui.huge.button,.a-text,.ui.header,.ui.vertical.stripe p,.ui.form .field>label{
+  font-family: 'Open Sans Condensed', sans-serif;
+}*/
 .ui.vertical.stripe.segment{
   background: #D5D5D5;
 }
-.ui.styled.accordion, .ui.styled.accordion .accordion{
-  background: transparent;
-}
-.ui.segment{
+.ui.styled.accordion, .ui.styled.accordion .accordion,.ui.segment{
   background: transparent;
 }
 /*HEADER CSS*/
 .ui.inverted.segment, .ui.primary.inverted.segment{
 background-image: url("images/railroad.jpg");
   height: 100vh;
-  /*filter: grayscale(85%);*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,7 +95,7 @@ a.item:hover{
   color:rgba(0, 0, 0, 0.87);
 }
 .item.process-img{
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 /*ACCORDION CSS*/
 .web-apps{
@@ -177,8 +176,8 @@ h5.ui.header{
   max-width: 90%;
 }
 /*FOOTER CSS*/
-.ui.inverted.header{
-  text-shadow: 2px 2px #000000;
+.ui.inverted.header,.credits{
+  color:#D5D5D5;
 }
 .ui.inverted.link.list .item, .ui.inverted.link.list a.item, .ui.inverted.link.list .item a:not(.ui){
   text-align: center;
@@ -190,45 +189,33 @@ h5.ui.header{
   text-align: center;
   color:#D5D5D5;
 }
+.ui.vertical.segment:last-child{
+      background-color: #062f4f;
+      background-image: none;
+      height:15vh;
+}
 /*MEDIA QUERIES*/
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .ui.inverted.segment, .ui.primary.inverted.segment, .icons-main {
-        background-attachment: scroll;
-    }
-  .icon-img{
-    margin-bottom: 20%;
-}
-.ui.header.icon-text{
-  font-size: 1rem;
-}
-h5.ui.header{
-  font-size: 1rem;
-}
+    .ui.inverted.segment, .ui.primary.inverted.segment, .icons-main {background-attachment: scroll;}
+    .icon-img{margin-bottom: 20%;}
+    .ui.header.icon-text{font-size: 1rem;}
+    h5.ui.header{font-size: 1rem;}
 }
 @media only screen and (min-device-width: 320px){
-  .icon-img{
-    margin-bottom: 20%;
-}
-#story-love{
-  margin-top: 35px;
-}
+  .icon-img{margin-bottom: 20%;}
+  #story-love{margin-top: 35px;}
+  .ui.vertical.segment:last-child{height:70vh;}
 }
 @media only screen and (min-device-width: 414px){
-#story-love{
-  margin-top: 65px;
-}
+  #story-love{margin-top: 65px;}
+  .ui.vertical.segment:last-child{height:70vh;}
 }
 @media only screen and (min-device-width: 768px){
-  #story-love{
-  margin-top: 100px;
-}
-  #story-form{
-    max-width: 95%;
-  }
-  #hire-me-form{
-    max-width: 95%;
-  }
+  #story-love{margin-top: 100px;}
+  #story-form{max-width: 95%;}
+  #hire-me-form{max-width: 95%;}
+  .ui.vertical.segment:last-child{height:15vh;}
 }
 /*SEMANTIC UI CSS*/
 .hidden.menu {

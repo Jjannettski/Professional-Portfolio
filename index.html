@@ -23,9 +23,9 @@
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/transition.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/form.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/accordion.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Open+Sans+Condensed:300|Shadows+Into+Light|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
     <script type="text/javascript" src="Semantic-UI-CSS-master/components/visibility.min.js" defer></script>
     <script type="text/javascript" src="Semantic-UI-CSS-master/components/sidebar.min.js" defer></script>
     <script type="text/javascript" src="Semantic-UI-CSS-master/components/transition.min.js" defer></script>
@@ -39,29 +39,27 @@
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
         <div class="ui container">
-            <a class="active item">Home</a>
-            <a class="item">About Me</a>
+            <a class="active item" href="#">Home</a>
+            <a class="item" href="#about">About Me</a>
             <a class="item" href="#process">The Process</a>
             <a class="item" href="#products">Products</a>
             <div class="right menu">
                 <div class="item">
-                    <a class="ui button">Build Your Story</a>
+                    <a class="ui button" href="#close">Build Your Story</a>
                 </div>
                 <div class="item">
-                    <a class="ui button">Contact</a>
+                    <a class="ui button" href="#foot">Contact</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu">
-        <a class="active item">Home</a>
-        <a class="item">About Me</a>
+        <a class="active item" href="#">Home</a>
+        <a class="item" href="#about">About Me</a>
         <a class="item" href="#process">The Process</a>
-        <a class="item" href="#products">Products</a>
-        <a class="item" href="#contact">Contact</a>
-        <a class="item">Contact Me</a>
-        <a class="item">Signup</a>
+        <a class="item" href="#products">The Product</a>
+        <a class="item" href="#foot">Contact</a>
     </div>
     <!-- Page Contents -->
     <div class="pusher">
@@ -71,12 +69,12 @@
                     <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-                    <a class="active item">Home</a>
-                    <a class="item">About Me</a>
+                    <a class="active item" href="#">Home</a>
+                    <a class="item" href="#about">About Me</a>
                     <a class="item" href="#process">The Process</a>
                     <a class="item" href="#products">Products</a>
                     <div class="right item">
-                        <a class="ui inverted button">Contact Me</a>
+                        <a class="ui inverted button" href="#foot">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -92,28 +90,21 @@
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
                     <div class="eight wide column">
-                        <h3 class="ui header">About Me</h3>
+                        <h3 class="ui header" id="about">About Me</h3>
                         <div class="ui styled fluid accordion">
                             <div class="title">
-                                <i class="dropdown icon"></i> Education
+                                <i class="dropdown icon"></i><span class="a-text"> Education and Skills</span>
                             </div>
                             <div class="content">
-                                <p class="transition hidden">Graduated from Baruch College with a Bachelor's in Communications/Public Relations.</p>
-                                <br>
-                                <p class="transition hidden">Currently Attending Rutgers Coding Bootcamp (RCB) studying Full-Stack Web Development</p>
+                                <p class="transition hidden">Graduated from Baruch College with a Bachelor's in Communications/Public Relations.<br><br>Currently Attending Rutgers Coding Bootcamp (RCB) studying Full-Stack Web Development<br><br>Skills: Html, Css, Javascript, Jquery, Bootstrap, Semantic UI</p>
+                                
                             </div>
                             <div class="title">
-                                <i class="dropdown icon"></i> Skills
-                            </div>
-                            <div class="content">
-                                <p>HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, SEMANTIC UI</p>
-                            </div>
-                            <div class="title">
-                                <i class="dropdown icon"></i> Web Apps I made
+                                <i class="dropdown icon"></i> <span class="a-text">Web Apps I made</span>
                             </div>
                             <div class="content">
                                 <ul>
-                                    <li class="web-apps"><a class="app-links" href="">Beer Tinder Coming Soon....</a></li>
+                                    <li class="web-apps" href="https://jjannettski.github.io/MyBeerTinder/"><a class="app-links" href="">Beer Tinder</a></li>
                                     <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/hangman-game/" target="_blank">Hangman</a></li>
                                     <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/TriviaGame/" target="_blank">Science Trivia</a></li>
                                     <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/TrainSchedule/" target="_blank">Train Schedule</a></li>
@@ -122,13 +113,13 @@
                                 </ul>
                             </div>
                             <div class="title">
-                                <i class="dropdown icon"></i> Who I Am
+                                <i class="dropdown icon"></i> <span class="a-text">Who I Am</span>
                             </div>
                             <div class="content">
                                 <p>Besides being a Front-End Developer, here are a few fun facts about me. I was born and raised in New York City. I enjoy most sports, although hockey is my favorite, and i'm heavily into fitness. In my spare time I produce music, workout, play video games, and go out on adventures. I love traveling and exploring new cities, meeting new people, and building relationships with them. </p>
                             </div>
                             <div class="title">
-                                <i class="dropdown icon"></i> My Mission
+                                <i class="dropdown icon"></i><span class="a-text"> My Mission</span>
                             </div>
                             <div class="content">
                                 <p>My objective is to create beautiful, sleek, and professional websites so that you can shine bright like a diamond in the eyes of potential employers in various fields, whether it be a website for your artist (musician) page, A page for a small business, or whatever your heart desires.</p>
@@ -151,15 +142,11 @@
                             <div class="content">
                                 <h5 class="ui header" style="text-align: left;">Brainstorming</h5>
                                 <div class="meta">
-                                    <span>Description</span>
                                     <p class="process-text">This is where we get to know each other. What better way to tell/build a story than to build chemistry between the subject and the author?
                                     </p>
                                 </div>
                                 <div class="description">
                                     <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
                                 </div>
                             </div>
                         </div>
@@ -171,15 +158,11 @@
                             <div class="content">
                                 <h5 class="ui header" style="text-align: left;">Research</h5>
                                 <div class="meta">
-                                    <span>Description</span>
                                     <p class="process-text">Before I begin coding the story, I research as much valuable information as I can about your industry and your interests so I have a foundation/starting point when I begin designg the website.
                                     </p>
                                 </div>
                                 <div class="description">
                                     <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
                                 </div>
                             </div>
                         </div>
@@ -191,15 +174,11 @@
                             <div class="content">
                                 <h5 class="ui header" style="text-align: left;">Design Phase</h5>
                                 <div class="meta">
-                                    <span>Description</span>
                                     <p class="process-text">This is where your story begins to form. I like to design my websites and projects before I craft the functions and user inputs, much like an author would write an outline for the plot of the story then make adjustments as needed as the story unfolds.
                                     </p>
                                 </div>
                                 <div class="description">
                                     <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
                                 </div>
                             </div>
                         </div>
@@ -211,15 +190,11 @@
                             <div class="content">
                                 <h5 class="ui header" style="text-align: left;">Website Comes to Life</h5>
                                 <div class="meta">
-                                    <span>Description</span>
                                     <p class="process-text">The the basic design is in place. The information, functionality, and mobile responsiveness gets plugged in and the website really begins to come to life.
                                     </p>
                                 </div>
                                 <div class="description">
                                     <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
                                 </div>
                             </div>
                         </div>
@@ -231,15 +206,11 @@
                             <div class="content">
                                 <h5 class="ui header" style="text-align: left;">Testing</h5>
                                 <div class="meta">
-                                    <span>Description</span>
                                     <p>At this point the website is basically complete. This is the last and potentially the most important part of building your story. This is where I put the website through rigorous testing so that I can try to detect any bugs that might have slipped through the cracks during the earlier phases to ensure I deliver you the best possible product.
                                     </p>
                                 </div>
                                 <div class="description">
                                     <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
                                 </div>
                             </div>
                         </div>
@@ -248,7 +219,7 @@
                 <!-- END PROCESS -->
                 <!-- THE PRODUCT, WHAT YOU CAN EXPECT -->
                 <div class="ui segment">
-                    <h3 class="ui header">The Product</h3>
+                    <h3 class="ui header" id="products">The Product</h3>
                     <div class="ui section divider"></div>
                     <div class="icons-main">
                         <div class="two-icons">
@@ -359,35 +330,30 @@
                 </form>
             </div>
         </div>
-        <div class="ui inverted vertical footer segment">
+        <div class="ui inverted vertical footer segment" id="foot">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
                     <div class="three wide column" style="margin-right:40px;">
                         <h4 class="ui inverted header">Contact</h4>
                         <div class="ui inverted link list">
                             <a href="#story-form-field" class="item">Forms</a>
-                            <a href="#" class="item">Email: Jjannettski@gmail.com</a>
-                            <a href="#" class="item">Phone: 347-982-3244</a>
-                            <a href="#" class="item">
-                                <!-- Gazebo Plans -->
-                            </a>
+                            <a class="item">Email: Jjannettski@gmail.com</a>
+                            <a class="item">Phone: 347-982-3244</a>
                         </div>
                     </div>
                     <div class="three wide column">
                         <h4 class="ui inverted header">Products</h4>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Portfolio Website</a>
-                            <a href="#" class="item">Various Web Applications</a>
-                            <a href="#" class="item">Entertainment Website</a>
-                            <a href="#" class="item">E-commerce Website</a>
-                            <a href="#" class="item">Personal Website</a>
+                            <a class="item">Portfolio Website</a>
+                            <a class="item">Various Web Applications</a>
+                            <a class="item">Entertainment Website</a>
+                            <a class="item">E-commerce Website</a>
+                            <a class="item">Personal Website</a>
                         </div>
                     </div>
                     <div class="seven wide column">
                         <h4 class="ui inverted header">Credits</h4>
-                        <p>Icons made by Freepik from www.flaticon.com </p>
-                        <br>
-                        <p>Gifs from graphicriver.net</p>
+                        <p class="credits">Icons made by Freepik from www.flaticon.com </p>
                     </div>
                 </div>
             </div>
