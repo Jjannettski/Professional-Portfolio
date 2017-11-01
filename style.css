@@ -2,6 +2,17 @@
 /*body,.ui.vertical.inverted.sidebar.menu.left.uncover.visible,.ui.huge.button,.a-text,.ui.header,.ui.vertical.stripe p,.ui.form .field>label{
   font-family: 'Open Sans Condensed', sans-serif;
 }*/
+/*.media-icons{
+  height: 48px;
+  margin-right: 20px;
+}
+.footer-icons{
+  width: 90%;
+  display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}*/
+
 .ui.vertical.stripe.segment{
   background: #D5D5D5;
 }
@@ -215,7 +226,7 @@ h5.ui.header{
   #story-love{margin-top: 100px;}
   #story-form{max-width: 95%;}
   #hire-me-form{max-width: 95%;}
-  .ui.vertical.segment:last-child{height:15vh;}
+  .ui.vertical.segment:last-child{height:30vh;}
 }
 /*SEMANTIC UI CSS*/
 .hidden.menu {
