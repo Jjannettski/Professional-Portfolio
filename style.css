@@ -1,17 +1,7 @@
 /*UNIVERSAL CSS*/
-/*body,.ui.vertical.inverted.sidebar.menu.left.uncover.visible,.ui.huge.button,.a-text,.ui.header,.ui.vertical.stripe p,.ui.form .field>label{
-  font-family: 'Open Sans Condensed', sans-serif;
-}*/
-/*.media-icons{
-  height: 48px;
-  margin-right: 20px;
+body,.ui.vertical.inverted.sidebar.menu.left.uncover.visible,.ui.huge.button,.a-text,.ui.header,.ui.vertical.stripe p,.ui.form .field>label{
+font-family: 'Inconsolata', monospace;
 }
-.footer-icons{
-  width: 90%;
-  display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}*/
 
 .ui.vertical.stripe.segment{
   background: #D5D5D5;
@@ -21,7 +11,7 @@
 }
 /*HEADER CSS*/
 .ui.inverted.segment, .ui.primary.inverted.segment{
-background-image: url("images/railroad.jpg");
+background-image: url("images/reynierdark.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -86,6 +76,9 @@ a.item:hover{
 .ui.button{
   background: transparent;
   color:#d5d5d5;
+}
+.ui.large.top.fixed.menu.transition.visible{
+font-family: 'Inconsolata', monospace;
 }
 /*About Me Section Css*/
 .six.wide.right.floated.column{
@@ -170,19 +163,20 @@ flex-direction: row;
 text-align: center;
 width:50%;
 }
-.ui.header{
+.ui.header,.ui.header.icon-text{
   text-align: center;
 }
-.ui.header.icon-text{
+/*.ui.header.icon-text{
   text-align: center;
-}
-.ui.header.icon-text{
+}*/
+.ui.header.icon-text,h5.ui.header{
   font-size: 20px;
 }
-h5.ui.header{
+/*h5.ui.header{
   font-size: 20px;
-}
+}*/
 /*FORM CSS*/
+
 #story-form{
   max-width: 90%;
 }

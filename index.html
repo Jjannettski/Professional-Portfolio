@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/transition.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/form.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/accordion.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
@@ -33,6 +33,7 @@
     <script type="text/javascript" src="Semantic-UI-CSS-master/components/form.min.js" defer></script>
     <script type="text/javascript" src="Semantic-UI-CSS-master/components/accordion.min.js" defer></script>
     <script type="text/javascript" src="portfolio.js" defer></script>
+    <script type="text/javascript" src="generator.js" defer></script>
 </head>
 
 <body>
@@ -55,13 +56,7 @@
         </div>
     </div>
     <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar menu">
-        <a class="active item" href="#">Home</a>
-        <a class="item" href="#about">About Me</a>
-        <a class="item" href="#process">The Process</a>
-        <a class="item" href="#products">The Product</a>
-        <a class="item" href="#foot">Contact</a>
-    </div>
+    <div class="ui vertical inverted sidebar menu"></div>
     <!-- Page Contents -->
     <div class="pusher">
         <div class="ui inverted vertical masthead center aligned segment">
@@ -81,7 +76,7 @@
             </div>
             <div class="ui text container">
                 <h1 class="ui inverted header">
-        Hello! I'm James, and I <span>Build Websites</span>
+        Hello! I'm James, and I Build <span id="typewriter"></span>
       </h1>
                 <div class="ui huge primary button">Build Your Story<i class="right arrow icon"></i></div>
                 <div class="ui huge primary button">Hire Me<i class="right arrow icon"></i></div>
@@ -265,7 +260,7 @@
                     <h4 class="ui horizontal header divider">
         <a style="color:#1B1C1D;">Hire Me!</a>
       </h4>
-                    <form class="ui form">
+                    <form class="ui form" id="hm1">
                         <div class="field">
                             <label>First Name *</label>
                             <input type="text" name="first-name" placeholder="First Name">
@@ -358,10 +353,6 @@
                         <h4 class="ui inverted header">Credits</h4>
                         <p class="credits">Icons made by Freepik from www.flaticon.com </p>
                     </div>
-                  <!--   <div class="footer-icons">
-                    <a href="https://github.com/Jjannettski" target="_blank"><img src="images/icons/github.png" class="media-icons"></a>
-                    <a href="https://www.linkedin.com/in/james-jannetti/" target="_blank"><img src="images/icons/linkedin.png" class="media-icons"></a>
-                </div> -->
                 </div>
             </div>
         </div>
