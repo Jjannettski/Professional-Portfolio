@@ -32,7 +32,7 @@ function sidebarHtml(){
   .append("<a class='item' href='about'>About Me</a>")
   .append("<a class='item' href='#process'>What I do</a>")
   .append("<a class='item' href='#products'>My Work</a>")
-  .append("<a class='item' href='https://github.com/Jjannettski'>My Github</a>")
+  .append("<a class='item' href='https://github.com/Jjannettski' target='_blank'>My Github</a>")
   .append("<a class='item' href='#foot'>Contact</a>");
 }
 
