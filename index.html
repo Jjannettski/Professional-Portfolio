@@ -23,28 +23,17 @@
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/transition.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/form.min.css">
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/accordion.min.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/image.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
-    <script type="text/javascript" src="Semantic-UI-CSS-master/components/visibility.min.js" defer></script>
-    <script type="text/javascript" src="Semantic-UI-CSS-master/components/sidebar.min.js" defer></script>
-    <script type="text/javascript" src="Semantic-UI-CSS-master/components/transition.min.js" defer></script>
-    <script type="text/javascript" src="Semantic-UI-CSS-master/components/form.min.js" defer></script>
-    <script type="text/javascript" src="Semantic-UI-CSS-master/components/accordion.min.js" defer></script>
-    <script type="text/javascript" src="portfolio.js" defer></script>
-    <script type="text/javascript" src="generator.js" defer></script>
 </head>
 
 <body>
     <div class="parallax"></div>
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
-        <div class="ui container">
-            <a class="active item" href="#">Home</a>
-            <a class="item" href="#about">About Me</a>
-            <a class="item" href="#process">The Process</a>
-            <a class="item" href="#products">Products</a>
+        <div class="ui container" id="flowing-menu">
             <div class="right menu">
                 <div class="item">
                     <a class="ui button" href="#close">Build Your Story</a>
@@ -67,8 +56,8 @@
         </a>
                     <a class="active item" href="#">Home</a>
                     <a class="item" href="#about">About Me</a>
-                    <a class="item" href="#process">The Process</a>
-                    <a class="item" href="#products">Products</a>
+                    <a class="item" href="#process">What I do</a>
+                    <a class="item" href="#products">My Work</a>
                     <div class="right item">
                         <a class="ui inverted button" href="#foot">Contact Me</a>
                     </div>
@@ -78,8 +67,8 @@
                 <h1 class="ui inverted header">
         Hello! I'm James, and I Build <span id="typewriter"></span>
       </h1>
-                <div class="ui huge primary button">Build Your Story<i class="right arrow icon"></i></div>
-                <div class="ui huge primary button">Hire Me<i class="right arrow icon"></i></div>
+                <div class="ui huge primary button"><a class="menu-btns" href="#close">Build Your Story</a><i class="right arrow icon"></i></div>
+                <div class="ui huge primary button"><a class="menu-btns" href="#close">Hire Me</a><i class="right arrow icon"></i></div>
             </div>
         </div>
         <div class="ui vertical stripe segment">
@@ -92,21 +81,11 @@
                                 <i class="dropdown icon"></i><span class="a-text"> Education and Skills</span>
                             </div>
                             <div class="content">
-                                <p class="transition hidden">Graduated from Baruch College with a Bachelor's in Communications/Public Relations.<br><br>Currently Attending Rutgers Coding Bootcamp (RCB) studying Full-Stack Web Development<br><br>Skills: Html, Css, Javascript, Jquery, Bootstrap, Semantic UI</p>
-                                
-                            </div>
-                            <div class="title">
-                                <i class="dropdown icon"></i> <span class="a-text">Web Apps I made</span>
-                            </div>
-                            <div class="content">
-                                <ul>
-                                    <li class="web-apps" href="https://jjannettski.github.io/MyBeerTinder/"><a class="app-links" href="">Beer Tinder</a></li>
-                                    <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/hangman-game/" target="_blank">Hangman</a></li>
-                                    <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/TriviaGame/" target="_blank">Science Trivia</a></li>
-                                    <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/TrainSchedule/" target="_blank">Train Schedule</a></li>
-                                    <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/GiphyApi/" target="_blank">Giphy API</a></li>
-                                    <li class="web-apps"><a class="app-links" href="https://jjannettski.github.io/week-4-game/" target="_blank">Dragon Killer</a></li>
-                                </ul>
+                                <p class="transition hidden">Graduated from Baruch College with a Bachelor's in Communications/Public Relations.
+                                    <br>
+                                    <br>Currently Attending Rutgers Coding Bootcamp (RCB) studying Full-Stack Web Development
+                                    <br>
+                                    <br>Skills: Html, Css, Javascript, Jquery, Bootstrap, Semantic UI</p>
                             </div>
                             <div class="title">
                                 <i class="dropdown icon"></i> <span class="a-text">Who I Am</span>
@@ -128,17 +107,17 @@
                 </div>
                 <!-- THE PROCESS -->
                 <div class="ui segment" id="process">
-                    <h3 class="ui header">The Process</h3>
+                    <h3 class="ui header">What I do</h3>
                     <div class="ui clearing divider"></div>
                     <div class="ui items">
                         <div class="item process-img">
                             <div class="image">
-                                <img class="derp" src="images/icons/brainstorming.png" align="left">
+                                <img class="derp" src="images/icons/followers.png" align="left">
                             </div>
                             <div class="content">
-                                <h5 class="ui header" style="text-align: left;">Brainstorming</h5>
+                                <h5 class="ui header" style="text-align: left;">Personal Websites</h5>
                                 <div class="meta">
-                                    <p class="process-text">This is where we get to know each other. What better way to tell/build a story than to build chemistry between the subject and the author?
+                                    <p class="process-text">Types of personal websites include professional portfolio, informational, musican/artist, and designer websites, all uniquely customized to tell your story!
                                     </p>
                                 </div>
                                 <div class="description">
@@ -149,12 +128,12 @@
                         <div class="ui section divider"></div>
                         <div class="item process-img">
                             <div class="image">
-                                <img class="derp" src="images/icons/search.png" align="left">
+                                <img class="derp" src="images/icons/stats.png" align="left">
                             </div>
                             <div class="content">
-                                <h5 class="ui header" style="text-align: left;">Research</h5>
+                                <h5 class="ui header" style="text-align: left;">Business Websites</h5>
                                 <div class="meta">
-                                    <p class="process-text">Before I begin coding the story, I research as much valuable information as I can about your industry and your interests so I have a foundation/starting point when I begin designg the website.
+                                    <p class="process-text">Regardless of the size of your business, it's essential to have a sleek, functional, and responsive website. I build websites for businesses of any size. Ready to start or grow your online presence? If so, you're in the right place.
                                     </p>
                                 </div>
                                 <div class="description">
@@ -165,12 +144,12 @@
                         <div class="ui section divider"></div>
                         <div class="item process-img">
                             <div class="image">
-                                <img class="derp" src="images/icons/dna.png" align="left">
+                                <img class="derp" src="images/icons/tic-tac-toe.png" align="left">
                             </div>
                             <div class="content">
-                                <h5 class="ui header" style="text-align: left;">Design Phase</h5>
+                                <h5 class="ui header" style="text-align: left;">Custom Web Applications</h5>
                                 <div class="meta">
-                                    <p class="process-text">This is where your story begins to form. I like to design my websites and projects before I craft the functions and user inputs, much like an author would write an outline for the plot of the story then make adjustments as needed as the story unfolds.
+                                    <p class="process-text">I build a variety of different types of web-based applications. It can be for yourself, as a gift, or even for your company. Check out my projects below for examples!
                                     </p>
                                 </div>
                                 <div class="description">
@@ -181,28 +160,13 @@
                         <div class="ui section divider"></div>
                         <div class="item process-img">
                             <div class="image">
-                                <img class="derp" src="images/icons/cardiogram.png" align="left">
+                                <img class="derp" src="images/icons/desktop.png" align="left">
                             </div>
                             <div class="content">
-                                <h5 class="ui header" style="text-align: left;">Website Comes to Life</h5>
+                                <h5 class="ui header" style="text-align: left;">UX/UI Design</h5>
                                 <div class="meta">
-                                    <p class="process-text">The the basic design is in place. The information, functionality, and mobile responsiveness gets plugged in and the website really begins to come to life.
-                                    </p>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui section divider"></div>
-                        <div class="item process-img">
-                            <div class="image">
-                                <img class="derp" src="images/icons/first-aid-kit.png" align="left">
-                            </div>
-                            <div class="content">
-                                <h5 class="ui header" style="text-align: left;">Testing</h5>
-                                <div class="meta">
-                                    <p>At this point the website is basically complete. This is the last and potentially the most important part of building your story. This is where I put the website through rigorous testing so that I can try to detect any bugs that might have slipped through the cracks during the earlier phases to ensure I deliver you the best possible product.
+                                    <p class="process-text">
+                                        Having trouble designing your website or web app? I offer UX/UI design services!
                                     </p>
                                 </div>
                                 <div class="description">
@@ -215,31 +179,31 @@
                 <!-- END PROCESS -->
                 <!-- THE PRODUCT, WHAT YOU CAN EXPECT -->
                 <div class="ui segment">
-                    <h3 class="ui header" id="products">The Product</h3>
+                    <h3 class="ui header" id="products">My Work</h3>
                     <div class="ui section divider"></div>
                     <div class="icons-main">
                         <div class="two-icons">
-                            <div class="icon-img" id="responsiveness">
-                                <img class="product-icons" src="images/icons/tablet.png">
-                                <h5 class="ui header icon-text">Responsiveness</h5>
-                                <p>Your story will be responsive across various devices whether it be a tablet or a phone.</p>
+                            <div class="icon-img responsive-top" id="top-left">
+                                <a class="app-links" href="https://jjannettski.github.io/hangman-game/" target="_blank"><img class="product-icons" src="images/hangman.jpg"></a>
+                                <h5 class="ui header icon-text">2000s Alt Rock Hangman</h5>
+                                <p>A alternative rock themed version of the classic friendly game hangman! Test your Knowledge of the best bands from the Y2K era!</p>
                             </div>
                             <div class="icon-img">
-                                <img class="product-icons" src="images/icons/touch-pad.png">
-                                <h5 class="ui header icon-text">Dynamic</h5>
-                                <p>It's one thing to tell a story, it's another to make it come to life! I do that by creating a comfortable and easy to use User-Interface (UI)</p>
+                                <a class="app-links" href="https://jjannettski.github.io/week-4-game/" target="_blank"><img class="product-icons" src="images/dragonboss.jpg"></a>
+                                <h5 class="ui header icon-text">Dragon Killer</h5>
+                                <p>Think you can beat a dragon? You are given a selection of weapons to choose from. Good Luck!</p>
                             </div>
                         </div>
                         <div class="two-icons">
-                            <div class="icon-img">
-                                <img class="product-icons" src="images/icons/startup.png">
-                                <h5 class="ui header icon-text">Speed and Reliability</h5>
-                                <p>Your story will have quick load times and fast-responding user-inputs.</p>
+                            <div class="icon-img responsive-top">
+                                <a class="app-links" href="https://jjannettski.github.io/MyBeerTinder/" target="_blank"><img class="product-icons" src="images/beertinderlogo.jpg"></a>
+                                <h5 class="ui header icon-text">Beer Tinder</h5>
+                                <p>Have you ever wondered how many types of beers are out there, where to find them, and info about them? Look no more! Get matched with a beer today!</p>
                             </div>
                             <div class="icon-img" id="story-love">
-                                <img class="product-icons" src="images/icons/home.png">
-                                <h5 class="ui header icon-text">A Story You'll Love</h5>
-                                <p>You'll shine bright like a diamond.</p>
+                                <a class="app-links" href="https://jjannettski.github.io/TriviaGame/" target="_blank"><img class="product-icons" src="images/triviagame.jpg"></a>
+                                <h5 class="ui header icon-text">Science Trivia</h5>
+                                <p>Think you're good at science and want to test your knowledge? This trivia game is loaded with questions about random facts from the science community!</p>
                             </div>
                         </div>
                     </div>
@@ -263,33 +227,33 @@
                     <form class="ui form" id="hm1">
                         <div class="field">
                             <label>First Name *</label>
-                            <input type="text" name="first-name" placeholder="First Name">
+                            <input class="firstn2"type="text" name="first-name" placeholder="First Name">
                         </div>
                         <div class="field">
                             <label>Last Name *</label>
-                            <input type="text" name="last-name" placeholder="Last Name">
+                            <input class="lastn2" type="text" name="last-name" placeholder="Last Name">
                         </div>
                         <div class="field">
                             <label>Email *</label>
-                            <input type="text" name="email" placeholder="example@example.com">
+                            <input class="email2" type="text" name="email" placeholder="example@example.com">
                         </div>
                         <div class="field">
                             <label>Phone Number *</label>
-                            <input type="text" name="phone-number" placeholder="1-347-000-0000">
+                            <input class="phone2" type="text" name="phone-number" placeholder="1-347-000-0000">
                         </div>
                         <div class="field">
                             <label>Employment Type *</label>
-                            <input type="text" name="website" placeholder="Ex. Temp-Hire, Full-Time">
+                            <input class="employ2" type="text" name="website" placeholder="Ex. Temp-Hire, Full-Time">
                         </div>
                         <div class="field">
-                            <label>Compensation Offer *</label>
-                            <input type="text" name="website" placeholder="Enter in a monetary value for Per Hour, Flat-Rate, or Salary (In USD)">
+                            <label>Compensation Offer</label>
+                            <input class="comp2" type="text" name="website" placeholder="Enter in a monetary value for Per Hour, Flat-Rate, or Salary (In USD)">
                         </div>
                         <div class="field">
                             <label>Additional Notes/Information</label>
-                            <textarea></textarea>
+                            <input class="additional2" type="text" name="additional" placeholder="Enter whatever you want">
                         </div>
-                        <button class="ui button" type="submit">Submit</button>
+                        <button id="submit-btn-hire" class="ui button" type="submit">Submit</button>
                     </form>
                 </div>
                 <div id="story-form">
@@ -299,29 +263,29 @@
                     <form class="ui form">
                         <div class="field">
                             <label>First Name *</label>
-                            <input type="text" name="first-name" placeholder="First Name">
+                            <input class="firstn1" type="text" name="first-name" placeholder="First Name">
                         </div>
                         <div class="field">
                             <label>Last Name *</label>
-                            <input type="text" name="last-name" placeholder="Last Name">
+                            <input class="lastn1" type="text" name="last-name" placeholder="Last Name">
                         </div>
                         <div class="field">
                             <label>Email *</label>
-                            <input type="text" name="email" placeholder="example@example.com">
+                            <input class="email1" type="text" name="email" placeholder="example@example.com">
                         </div>
                         <div class="field">
                             <label>Phone Number *</label>
-                            <input type="text" name="phone-number" placeholder="1-347-000-0000">
+                            <input class="phone1" type="text" name="phone-number" placeholder="1-347-000-0000">
                         </div>
                         <div class="field">
                             <label>Type of Website *</label>
-                            <input type="text" name="website" placeholder="Ex. Personal Portfolio, Artist Page, Fashion.">
+                            <input class="web1" type="text" name="website" placeholder="Ex. Personal Portfolio, Artist Page, Fashion.">
                         </div>
                         <div class="field">
                             <label>Additional Notes/Information</label>
-                            <textarea></textarea>
+                            <input class="additional1" type="text" name="additional" placeholder="Enter whatever you want">
                         </div>
-                        <button class="ui button" type="submit">Submit</button>
+                        <button id="submit-btn-story" class="ui button" type="submit">Submit</button>
                 </div>
                 </form>
             </div>
@@ -351,14 +315,24 @@
                     </div>
                     <div class="seven wide column">
                         <h4 class="ui inverted header">Credits</h4>
-                        <p class="credits">Icons made by Freepik from www.flaticon.com </p>
+                        <p class="credits">Icons made by Freepik from www.flaticon.com</p>
+                        <p class="credits">Menu Image captured by Reynier Carl @caarl</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/components/visibility.min.js" defer></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/components/sidebar.min.js" defer></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/components/transition.min.js" defer></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/components/form.min.js" defer></script>
+    <script type="text/javascript" src="Semantic-UI-CSS-master/components/accordion.min.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script type="text/javascript" src="portfolio.js" defer></script>
+    <script type="text/javascript" src="generator.js" defer></script>
+    <script type="text/javascript" src="firebase.js" defer></script>
 </body>
-
 <!--End of Footer-->
 </body>
 

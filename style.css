@@ -1,4 +1,5 @@
 /*UNIVERSAL CSS*/
+
 body,.ui.vertical.inverted.sidebar.menu.left.uncover.visible,.ui.huge.button,.a-text,.ui.header,.ui.vertical.stripe p,.ui.form .field>label{
 font-family: 'Inconsolata', monospace;
 }
@@ -9,7 +10,14 @@ font-family: 'Inconsolata', monospace;
 .ui.styled.accordion, .ui.styled.accordion .accordion,.ui.segment{
   background: transparent;
 }
+
 /*HEADER CSS*/
+
+.menu-btns{
+  text-decoration: none;
+  color: #D5D5D5;
+}
+
 .ui.inverted.segment, .ui.primary.inverted.segment{
 background-image: url("images/reynierdark.jpg");
   height: 100vh;
@@ -50,7 +58,9 @@ background-image: url("images/reynierdark.jpg");
 .ui.secondary.inverted.pointing.menu{
 border:none;
 }
+
 /*Sidebar Menu CSS*/
+
 .ui.inverted.menu .item, .ui.inverted.menu .item > a:not(.ui){
   color:#d5d5d5;
 }
@@ -60,7 +70,9 @@ border:none;
 a.item:hover{
   background: rgba(255, 255, 255, 0.15);
 }
+
 /*Floating Menu CSS*/
+
 .ui.menu .active.item{
   color:#d5d5d5;
 }
@@ -80,7 +92,9 @@ a.item:hover{
 .ui.large.top.fixed.menu.transition.visible{
 font-family: 'Inconsolata', monospace;
 }
+
 /*About Me Section Css*/
+
 .six.wide.right.floated.column{
   margin-top: 2%;
 }
@@ -89,7 +103,9 @@ font-family: 'Inconsolata', monospace;
   margin-right: auto;
   margin-left: auto;
 }
-/*Process CSS*/
+
+/*What i do CSS*/
+
 .derp{
   width: 150px;
   height: 150px;
@@ -101,9 +117,11 @@ font-family: 'Inconsolata', monospace;
 .item.process-img{
   margin-bottom: 8%;
 }
+
 /*ACCORDION CSS*/
+
 .web-apps{
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .app-links{
   color:#1B1C1D;
@@ -112,12 +130,14 @@ font-family: 'Inconsolata', monospace;
 .app-links:hover{
   color:#D5D5D5;
 }
+
 /*Button CSS*/
+
 #hire-me{
-	text-align: center;
+  text-align: center;
 }
 #hire-me-button{
-	font-size: 1.0rem;
+  font-size: 1.0rem;
   color:#d5d5d5;
   background-color:#062f4f;
 }
@@ -143,13 +163,19 @@ font-family: 'Inconsolata', monospace;
 .ui.huge.primary.button:hover{
   color: #1B1C1D;
 }
-/*THE PRODUCT CSS*/
+
+#submit-btn-story,#submit-btn-hire{
+  background: #062f4f;
+}
+
+/*My Work CSS*/
+
 .product-icons{
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
 }
 .icon-img{
-  margin-bottom: 15%;
+  margin-bottom: 20%;
 }
 .icon-text{
   text-align: left;
@@ -166,21 +192,19 @@ width:50%;
 .ui.header,.ui.header.icon-text{
   text-align: center;
 }
-/*.ui.header.icon-text{
-  text-align: center;
-}*/
+
 .ui.header.icon-text,h5.ui.header{
   font-size: 20px;
 }
-/*h5.ui.header{
-  font-size: 20px;
-}*/
+
 /*FORM CSS*/
 
-#story-form{
+#story-form,#hire-me-form{
   max-width: 90%;
 }
+
 /*FOOTER CSS*/
+
 .ui.inverted.header,.credits{
   color:#D5D5D5;
 }
@@ -203,24 +227,24 @@ width:50%;
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .ui.inverted.segment, .ui.primary.inverted.segment, .icons-main {background-attachment: scroll;}
-    .icon-img{margin-bottom: 20%;}
     .ui.header.icon-text{font-size: 1rem;}
     h5.ui.header{font-size: 1rem;}
 }
+@media only screen and (min-device-width: 989px){
+  #top-left{margin-bottom: 20% !important;}
+}
 @media only screen and (min-device-width: 320px){
-  .icon-img{margin-bottom: 20%;}
-  #story-love{margin-top: 35px;}
   .ui.vertical.segment:last-child{height:70vh;}
 }
-@media only screen and (min-device-width: 414px){
-  #story-love{margin-top: 65px;}
+@media only screen and (min-device-width: 412px){
   .ui.vertical.segment:last-child{height:70vh;}
+  #top-left{margin-bottom: 31%}
 }
 @media only screen and (min-device-width: 768px){
-  #story-love{margin-top: 100px;}
   #story-form{max-width: 95%;}
   #hire-me-form{max-width: 95%;}
   .ui.vertical.segment:last-child{height:30vh;}
+  #top-left{margin-bottom: 27%}
 }
 /*SEMANTIC UI CSS*/
 .hidden.menu {

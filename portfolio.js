@@ -16,7 +16,7 @@ $(".ui.large.top.fixed.hidden.menu").hide();
           }
         })
       ;
-
+$("#story-form").hide();
 $("#hire-me-form").hide();
 
 function hireMeFormGenerator(){
